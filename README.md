@@ -1,8 +1,8 @@
-# Infinite Swiper App
+# Infinite Swipeable Slider
 
-Slider - UI component made in React with HTML content around it specifically designed as an issue product tracker similar to Jira.
+Slider - UI component made in React
 
-Link: [https://golgariet.github.io/react-swiper/](https://golgariet.github.io/react-swiper/)
+Link: [https://golgariet.github.io/react-swiper-app/](https://golgariet.github.io/react-swiper-app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -22,7 +22,7 @@ You will also see any lint errors in the console.
 
 ## Slider Features
 
-- Fully Responsive
+- Not Responsive enough (has many bugs, but solvable)
 - Infinite Mode
 - Indicators
 - Toggle switch
