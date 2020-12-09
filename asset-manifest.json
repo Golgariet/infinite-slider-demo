@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/infinite-slider-demo/static/css/main.99c517f9.chunk.css",
+    "main.js": "/infinite-slider-demo/static/js/main.9baadaac.chunk.js",
+    "main.js.map": "/infinite-slider-demo/static/js/main.9baadaac.chunk.js.map",
+    "runtime-main.js": "/infinite-slider-demo/static/js/runtime-main.25ed2510.js",
+    "runtime-main.js.map": "/infinite-slider-demo/static/js/runtime-main.25ed2510.js.map",
+    "static/js/2.4e5ed404.chunk.js": "/infinite-slider-demo/static/js/2.4e5ed404.chunk.js",
+    "static/js/2.4e5ed404.chunk.js.map": "/infinite-slider-demo/static/js/2.4e5ed404.chunk.js.map",
+    "index.html": "/infinite-slider-demo/index.html",
+    "precache-manifest.09e1ddf347ca16a08d96086250f7f0b0.js": "/infinite-slider-demo/precache-manifest.09e1ddf347ca16a08d96086250f7f0b0.js",
+    "service-worker.js": "/infinite-slider-demo/service-worker.js",
+    "static/css/main.99c517f9.chunk.css.map": "/infinite-slider-demo/static/css/main.99c517f9.chunk.css.map",
+    "static/js/2.4e5ed404.chunk.js.LICENSE.txt": "/infinite-slider-demo/static/js/2.4e5ed404.chunk.js.LICENSE.txt",
+    "static/media/game-1.jpg": "/infinite-slider-demo/static/media/game-1.2c69353f.jpg",
+    "static/media/game-2.jpg": "/infinite-slider-demo/static/media/game-2.01cce3d7.jpg",
+    "static/media/game-3.jpg": "/infinite-slider-demo/static/media/game-3.1a689743.jpg",
+    "static/media/game-4.jpg": "/infinite-slider-demo/static/media/game-4.976b6c91.jpg",
+    "static/media/game-5.jpg": "/infinite-slider-demo/static/media/game-5.2ae3dd45.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.25ed2510.js",
+    "static/js/2.4e5ed404.chunk.js",
+    "static/css/main.99c517f9.chunk.css",
+    "static/js/main.9baadaac.chunk.js"
+  ]
+}
