@@ -34,7 +34,6 @@ html {
   display: flex;
   height: 20px;
   position: absolute;
-  // top: -30px;
   width: 35px;
   margin: 10px 0 0 10px;
   z-index: 1000;
@@ -66,11 +65,11 @@ html {
   width: 13px;
 }
 
-input:checked+.switcher {
+input:checked + .switcher {
   background-color: #333;
 }
 
-input:checked+.switcher:before {
+input:checked + .switcher:before {
   transform: translateX(13px);
 }
 
@@ -96,10 +95,8 @@ input:checked+.switcher:before {
   &__button {
     position: absolute;
     z-index: 2;
-    //top: 0;
     height: 20%;
     display: block;
-    // background-color: rgba(0, 0, 0, 0.1);
     background-color: transparent;
     border: 0;
     padding: 0 5px;
@@ -107,7 +104,6 @@ input:checked+.switcher:before {
     //overflow: hidden;
     transition: background-color 300ms ease;
     cursor: pointer;
-    //position: absolute;
     top: 50%;
     transform: translateY(-50%);
 
@@ -331,28 +327,13 @@ input:checked+.switcher:before {
   }
 }
 
-// .text {
-//   font-family: Lato, sans-serif;
-//   font-weight: 400;
-//   font-size: 50px;
-//   line-height: 1.7;
-//   text-align: center;
-//   position: relative;
-//   //top: "50",
-//   bottom: 58%;
-//   // transform: "translate(35%, 35%)",
-//   text-shadow: 3px 3px 5px #4b4b4b;
-//   color: white;
-//   //user-select: none;
-// }
-
 .btn {
   font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
   border-radius: 100px;
   border: none;
-  background-image: linear-gradient(to right, #735368, #3D2531);
+  background-image: linear-gradient(to right, #735368, #3d2531);
   color: white;
   position: absolute;
   overflow: hidden;
@@ -360,11 +341,11 @@ input:checked+.switcher:before {
   bottom: 50%;
   left: 16%;
 
-  &>* {
+  & > * {
     display: inline-block;
     height: 100%;
     width: 100%;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &__visible {
@@ -379,7 +360,7 @@ input:checked+.switcher:before {
   }
 
   &:hover {
-    background-image: linear-gradient(to left, #735368, #3D2531);
+    background-image: linear-gradient(to left, #735368, #3d2531);
   }
 
   &:hover &__visible {

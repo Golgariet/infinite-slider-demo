@@ -10,7 +10,6 @@ import TouchHandler from "./TouchHandler";
 
 const IMG_DATA = [i1, i2, i3, i4, i5];
 let lastPos = 0;
-//let currentPos = 0;
 
 class Slider extends Component {
   constructor(props) {
