@@ -2,7 +2,7 @@
 
 Slider - UI component made in React
 
-Link: TEST!
+Link: [https://golgariet.github.io/infinite-slider-demo/](https://golgariet.github.io/infinite-slider-demo/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -22,7 +22,7 @@ You will also see any lint errors in the console.
 
 ## Slider Features
 
-- Not Responsive enough (has many bugs, but solvable)
+- Responsive enough (but has some bugs, but solvable)
 - Infinite Mode
 - Indicators
 - Toggle switch
