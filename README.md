@@ -2,7 +2,7 @@
 
 Slider - UI component made in React
 
-Link: [https://golgariet.github.io/react-swiper-app/](https://golgariet.github.io/react-swiper-app/)
+Link: TEST!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
