@@ -219,26 +219,6 @@ class Slider extends Component {
     }
   };
 
-  // touchSwipe = (e) => {
-  //   e.persist();
-  //   let type = e.type.toLowerCase();
-
-  //   if (type === "touchstart") {
-  //     lastPos = e.touches[0].clientX;
-  //   }
-
-  //   if (type === "touchmove") {
-  //     currentPos = e.touches[0].clientX;
-  //   }
-
-  //   if (type === "touchend") {
-  //     if (lastPos === 0 || currentPos === 0 || lastPos === currentPos) {
-  //       return;
-  //     }
-  //     currentPos > lastPos ? this.goRightFn() : this.goLeftFn();
-  //   }
-  // };
-
   Indicator(curIndex, index) {
     let nextIndicator = curIndex < index;
     const imgWidth_Pixels = this.cardContainer.children[0].getBoundingClientRect()
@@ -309,9 +289,6 @@ class Slider extends Component {
             ref={(ref_id) => (this.cardContainer = ref_id)}
             className="card-container"
             style={styles.cardContainer}
-            // onTouchStart={(e) => this.touchSwipe(e)}
-            // onTouchMove={(e) => this.touchSwipe(e)}
-            // onTouchEnd={(e) => this.touchSwipe(e)}
             onDragStart={(e) => this.mouseSwipe(e)}
             onDragEnd={(e) => this.mouseSwipe(e)}
           >
