@@ -6,6 +6,7 @@ import i2 from "./assets/game-1.jpg";
 import i3 from "./assets/game-3.jpg";
 import i4 from "./assets/game-4.jpg";
 import i5 from "./assets/game-5.jpg";
+
 import TouchHandler from "./TouchHandler";
 
 const IMG_DATA = [i1, i2, i3, i4, i5];
@@ -206,6 +207,7 @@ class Slider extends Component {
 
   mouseSwipe = (e) => {
     e.persist();
+    // e.preventDefault();
     let type = e.type.toLowerCase();
     if (type === "dragstart") {
       lastPos = e.clientX;
@@ -293,22 +295,27 @@ class Slider extends Component {
           >
             <Card
               card_number={i1}
+              waifu_name={"Anton"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i2}
+              waifu_name={"Awful"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i3}
+              waifu_name={"Serious"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i4}
+              waifu_name={"Xianling"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i5}
+              waifu_name={"Keqing"}
               resize_width={this.state.currentCard_Width}
             />
           </div>
@@ -347,17 +354,8 @@ class Indicator extends Component {
 
 const styles = {
   viewPort: {
-    //position: "absolute", //important!
-    //top: "50%",
-    //left: "50%",
-    //transport: "translate(-50%, -50%)",
-    //height: "auto",
-    //backgroundColor: "red",
     overflow: "hidden",
-    //margin: "-150px",
-    // objectFit: "cover",
-    // backgroundSize: "cover",
-    //minHeight: "100vh",
+
     height: "100vh", // problem with ghosting
     width: "100vh",
     backgroundSize: "cover",
