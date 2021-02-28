@@ -18,13 +18,17 @@ function Card(props) {
       }}
     >
       <div style={styles.caption}>
-        <h2 style={styles.text_main}>Genshin</h2>
-        {/* <p style={styles.text_sub}>awdawdawd</p> */}
+        {/* <h2 style={styles.text_main}>Genshin</h2>
         {data.map(function (data) {
           return <p style={styles.text_sub}>{props.waifu_name}</p>;
-        })}
+        })} */}
 
-        <img alt="images" style={styles.image} src={props.card_number}></img>
+        <img
+          draggable="false"
+          alt="images"
+          style={styles.image}
+          src={props.card_number}
+        ></img>
       </div>
     </div>
   );
@@ -90,3 +94,10 @@ const styles = {
 };
 
 export default React.memo(Card);
+
+// 1) draggable="false" , draggable="true"
+// 2) Text Design
+// 3) bug fixes
+// 4) Webpack and clean React app
+// 5) labels on buttons
+// 6) BEM Nesting

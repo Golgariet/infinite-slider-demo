@@ -292,6 +292,7 @@ class Slider extends Component {
             style={styles.cardContainer}
             onDragStart={(e) => this.mouseSwipe(e)}
             onDragEnd={(e) => this.mouseSwipe(e)}
+            draggable="true"
           >
             <Card
               card_number={i1}
