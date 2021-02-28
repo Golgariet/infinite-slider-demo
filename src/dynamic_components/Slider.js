@@ -281,13 +281,13 @@ class Slider extends Component {
           <span />
         </button>
         <div
-          ref={(ref_id) => (this.viewPort = ref_id)}
+          ref={(reference) => (this.viewPort = reference)}
           className="view-port"
           style={styles.viewPort}
         >
           <div
             {...TouchHandler.events}
-            ref={(ref_id) => (this.cardContainer = ref_id)}
+            ref={(reference) => (this.cardContainer = reference)}
             className="card-container"
             style={styles.cardContainer}
             onDragStart={(e) => this.mouseSwipe(e)}
@@ -296,27 +296,27 @@ class Slider extends Component {
           >
             <Card
               card_number={i1}
-              waifu_name={"Anton"}
+              city_name={"Hamburg"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i2}
-              waifu_name={"Awful"}
+              city_name={"Hong-Kong"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i3}
-              waifu_name={"Serious"}
+              city_name={"Riga"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i4}
-              waifu_name={"Xianling"}
+              city_name={"Paris"}
               resize_width={this.state.currentCard_Width}
             />
             <Card
               card_number={i5}
-              waifu_name={"Keqing"}
+              city_name={"San-Francisco"}
               resize_width={this.state.currentCard_Width}
             />
           </div>
@@ -357,7 +357,7 @@ const styles = {
   viewPort: {
     overflow: "hidden",
 
-    height: "100vh", // problem with ghosting
+    height: "100vh",
     width: "100vh",
     backgroundSize: "cover",
     backgroundPosition: "center",

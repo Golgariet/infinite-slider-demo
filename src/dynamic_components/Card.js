@@ -1,13 +1,13 @@
 import React from "react";
 import "./slider.scss";
 
-var data = [
-  { id: 1, itemNumber: "Item 1", text: "Uno" },
-  { id: 2, itemNumber: "Item 2", text: "Dos" },
-  { id: 3, itemNumber: "Item 3", text: "Tres" },
-  { id: 4, itemNumber: "Item 4", text: "Cuatro" },
-  { id: 5, itemNumber: "Item 5", text: "Cinco" },
-];
+// var data = [
+//   { id: 1, itemNumber: "Item 1", text: "Uno" },
+//   { id: 2, itemNumber: "Item 2", text: "Dos" },
+//   { id: 3, itemNumber: "Item 3", text: "Tres" },
+//   { id: 4, itemNumber: "Item 4", text: "Cuatro" },
+//   { id: 5, itemNumber: "Item 5", text: "Cinco" },
+// ];
 
 function Card(props) {
   return (
@@ -18,9 +18,10 @@ function Card(props) {
       }}
     >
       <div style={styles.caption}>
-        {/* <h2 style={styles.text_main}>Genshin</h2>
-        {data.map(function (data) {
-          return <p style={styles.text_sub}>{props.waifu_name}</p>;
+        <p style={styles.text_main}>Welcome:</p>
+        {/* <p style={styles.text_sub}>{props.city_name}</p> */}
+        {/* {data.map(function (data) {
+          return <h2 style={styles.text_sub}>{props.city_name}</h2>;
         })} */}
 
         <img
@@ -35,31 +36,38 @@ function Card(props) {
 }
 
 const styles = {
-  primary: {},
-
   text_main: {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(20%, 30%)",
+    transform: "translate(20%, 35%)",
     zIndex: "99999",
     height: "50%",
     width: "50%",
-    fontSize: "6vw",
+    fontSize: "4vw",
+    textTransform: "uppercase",
+    letterSpacing: "2.5px",
+    textAlign: "justify",
   },
 
   text_sub: {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(26%, 50%)",
+    transform: "translate(66%, 70%)",
     zIndex: "99999",
     height: "50%",
     width: "50%",
     fontSize: "3vw",
+    textTransform: "uppercase",
+    letterSpacing: "2.5px",
+    WebkitFontDmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale",
+    textRendering: "optimizeLegibility",
   },
 
   card: {
+    cursor: "grab",
     height: "auto",
     boxSizing: "border-box",
     backgroundSize: "cover",
@@ -95,9 +103,19 @@ const styles = {
 
 export default React.memo(Card);
 
-// 1) draggable="false" , draggable="true"
+// 1) draggable="false" , draggable="true" - DONE
 // 2) Text Design
 // 3) bug fixes
 // 4) Webpack and clean React app
 // 5) labels on buttons
 // 6) BEM Nesting
+
+// Even the slightest 1mm drag changes the active image. Consider preventing such behaviour.
+
+// Buttons and other elements are not accessible, they don’t have any labels for people who don’t see well.
+
+// Consider splitting your logic, making it more granular.
+
+// You use BEM, use its benefits in SCSS, not nesting tags themselves.
+
+// Redundant arrow functions in handlers (e) => do(e)
