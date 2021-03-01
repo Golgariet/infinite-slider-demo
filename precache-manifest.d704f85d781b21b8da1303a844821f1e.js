@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4924b4e7edfc26dd3894ff2b0f7bfef",
+    "revision": "24104ddfa8a75e5e312e42c624a7d35f",
     "url": "/infinite-slider-demo/index.html"
   },
   {
-    "revision": "94fa82d342b83a7863cc",
+    "revision": "9ccc004bd2b097773efc",
     "url": "/infinite-slider-demo/static/css/main.23f0ce3e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-slider-demo/static/js/2.4e5ed404.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "94fa82d342b83a7863cc",
-    "url": "/infinite-slider-demo/static/js/main.e8a4ac34.chunk.js"
+    "revision": "9ccc004bd2b097773efc",
+    "url": "/infinite-slider-demo/static/js/main.69b46736.chunk.js"
   },
   {
     "revision": "4daac73907d596ea9197",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-slider-demo/static/media/game-4.976b6c91.jpg"
   },
   {
-    "revision": "ea38cc843103864586613fd58363ab00",
-    "url": "/infinite-slider-demo/static/media/game-5.ea38cc84.jpg"
+    "revision": "43566f97d8becbe0a8d0dfb65c7bbcf4",
+    "url": "/infinite-slider-demo/static/media/game-5.43566f97.jpg"
   }
 ]);
