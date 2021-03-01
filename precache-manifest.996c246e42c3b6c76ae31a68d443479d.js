@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "24104ddfa8a75e5e312e42c624a7d35f",
+    "revision": "2c7da5559dcb7bc66e9b0075f9b9db62",
     "url": "/infinite-slider-demo/index.html"
   },
   {
-    "revision": "9ccc004bd2b097773efc",
-    "url": "/infinite-slider-demo/static/css/main.23f0ce3e.chunk.css"
+    "revision": "98b939a52ccf192f913d",
+    "url": "/infinite-slider-demo/static/css/main.2d8da10e.chunk.css"
   },
   {
     "revision": "b3f0b1fe0dacb184d5f6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-slider-demo/static/js/2.4e5ed404.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ccc004bd2b097773efc",
-    "url": "/infinite-slider-demo/static/js/main.69b46736.chunk.js"
+    "revision": "98b939a52ccf192f913d",
+    "url": "/infinite-slider-demo/static/js/main.c2fdea38.chunk.js"
   },
   {
     "revision": "4daac73907d596ea9197",

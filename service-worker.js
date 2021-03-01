@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/infinite-slider-demo/precache-manifest.d704f85d781b21b8da1303a844821f1e.js"
+  "/infinite-slider-demo/precache-manifest.996c246e42c3b6c76ae31a68d443479d.js"
 );
 
 self.addEventListener('message', (event) => {
