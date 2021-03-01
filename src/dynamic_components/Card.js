@@ -1,14 +1,6 @@
 import React from "react";
 import "./slider.scss";
 
-// var data = [
-//   { id: 1, itemNumber: "Item 1", text: "Uno" },
-//   { id: 2, itemNumber: "Item 2", text: "Dos" },
-//   { id: 3, itemNumber: "Item 3", text: "Tres" },
-//   { id: 4, itemNumber: "Item 4", text: "Cuatro" },
-//   { id: 5, itemNumber: "Item 5", text: "Cinco" },
-// ];
-
 function Card(props) {
   return (
     <div
@@ -18,12 +10,6 @@ function Card(props) {
       }}
     >
       <div style={styles.caption}>
-        <p style={styles.text_main}>Welcome:</p>
-        {/* <p style={styles.text_sub}>{props.city_name}</p> */}
-        {/* {data.map(function (data) {
-          return <h2 style={styles.text_sub}>{props.city_name}</h2>;
-        })} */}
-
         <img
           draggable="false"
           alt="images"
@@ -73,13 +59,6 @@ const styles = {
     backgroundSize: "cover",
     backgroundPosition: "center",
     userSelect: "none",
-
-    // userDrag: "none",
-    // userSelect: "none",
-    // MozUserSelect: "none",
-    // WebkitUserSelect: "none",
-    // WebkitUserDrag: "none",
-    // msUserSelect: "none",
   },
 
   image: {
@@ -91,8 +70,6 @@ const styles = {
     objectFit: "cover",
     userSelect: "none",
     userDrag: "none",
-
-    // WebkitUserDrag: "none",
   },
 
   caption: {
@@ -102,20 +79,3 @@ const styles = {
 };
 
 export default React.memo(Card);
-
-// 1) draggable="false" , draggable="true" - DONE
-// 2) Text Design
-// 3) bug fixes
-// 4) Webpack and clean React app
-// 5) labels on buttons
-// 6) BEM Nesting
-
-// Even the slightest 1mm drag changes the active image. Consider preventing such behaviour.
-
-// Buttons and other elements are not accessible, they don’t have any labels for people who don’t see well.
-
-// Consider splitting your logic, making it more granular.
-
-// You use BEM, use its benefits in SCSS, not nesting tags themselves.
-
-// Redundant arrow functions in handlers (e) => do(e)
