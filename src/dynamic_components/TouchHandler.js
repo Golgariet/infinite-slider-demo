@@ -20,7 +20,7 @@ TouchHandler.events = {
     TouchHandler.yDown = e.touches[0].clientY;
   },
   onTouchMove: (e) => {
-    if (TouchHandler.xDown === null || TouchHandler.yDown === null) {
+    if (!TouchHandler.xDown || !TouchHandler.yDown) {
       return;
     }
 
@@ -30,19 +30,21 @@ TouchHandler.events = {
     let xDiff = TouchHandler.xDown - xUp;
     let yDiff = TouchHandler.yDown - yUp;
 
-    if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      if (xDiff > 0) {
-        if (TouchHandler.configuration.hasOwnProperty("left")) {
-          TouchHandler.configuration.left();
-        }
-      } else {
-        if (TouchHandler.configuration.hasOwnProperty("right")) {
-          TouchHandler.configuration.right();
+    if (Math.abs(xDiff) + Math.abs(yDiff) > 50) {
+      if (Math.abs(xDiff) > Math.abs(yDiff)) {
+        if (xDiff > 0) {
+          if (TouchHandler.configuration.hasOwnProperty("left")) {
+            TouchHandler.configuration.left();
+          }
+        } else {
+          if (TouchHandler.configuration.hasOwnProperty("right")) {
+            TouchHandler.configuration.right();
+          }
         }
       }
+      TouchHandler.xDown = null;
+      TouchHandler.yDown = null;
     }
-    TouchHandler.xDown = null;
-    TouchHandler.yDown = null;
   },
 };
 
